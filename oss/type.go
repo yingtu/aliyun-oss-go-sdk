@@ -206,7 +206,7 @@ type ObjectProperties struct {
 	XMLName      xml.Name  `xml:"Contents"`
 	Key          string    `xml:"Key"`          // Object的Key
 	Type         string    `xml:"Type"`         // Object Type
-	Size         uint      `xml:"Size"`         // Object的长度字节数
+	Size         int       `xml:"Size"`         // Object的长度字节数
 	ETag         string    `xml:"ETag"`         // 标示Object的内容
 	Owner        Owner     `xml:"Owner"`        // 保存Object拥有者信息的容器
 	LastModified time.Time `xml:"LastModified"` // Object最后修改时间

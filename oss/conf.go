@@ -17,10 +17,10 @@ type Config struct {
 	Endpoint        string      // oss地址
 	AccessKeyID     string      // accessId
 	AccessKeySecret string      // accessKey
-	RetryTimes      uint        // 失败重试次数，默认5
+	RetryTimes      int         // 失败重试次数，默认5
 	UserAgent       string      // SDK名称/版本/系统信息
 	IsDebug         bool        // 是否开启调试模式，默认false
-	Timeout         uint        // 超时时间，默认60s
+	Timeout         int         // 超时时间，默认60s
 	SecurityToken   string      // STS Token
 	IsCname         bool        // Endpoint是否是CNAME
 	HTTPTimeout     HTTPTimeout // HTTP的超时时间设置
