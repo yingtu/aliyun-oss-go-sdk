@@ -80,6 +80,7 @@ func (conn Conn) doRequest(method string, uri *url.URL, canonicalizedResource st
 		},
 		ResponseHeaderTimeout: httpTimeOut.HeaderTimeout,
 		MaxIdleConnsPerHost:   2000,
+		DisableKeepAlives:     true,
 	}}
 
 	resp, err := timeoutClient.Do(req)
